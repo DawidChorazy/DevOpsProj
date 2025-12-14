@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Tic Tac Toe</h1>
+    <div id="status" class="status">Ruch: <span id="player">X</span></div>
+    <div class="scoreboard" aria-live="polite">
+      <div class="scores">
+        <div class="score-item">X: <span id="score-x">0</span></div>
+        <div class="score-item">O: <span id="score-o">0</span></div>
+        <div class="score-item">Remisy: <span id="score-draw">0</span></div>
+      </div>
+      <div class="score-controls">
+        <button id="reset-scores">Resetuj wyniki</button>
+      </div>
+    </div>
+    <div id="board" class="board" role="grid" aria-label="Plansza tic tac toe">
+      <button class="cell" data-index="0" aria-label="Komórka 1"></button>
+      <button class="cell" data-index="1" aria-label="Komórka 2"></button>
+      <button class="cell" data-index="2" aria-label="Komórka 3"></button>
+      <button class="cell" data-index="3" aria-label="Komórka 4"></button>
+      <button class="cell" data-index="4" aria-label="Komórka 5"></button>
+      <button class="cell" data-index="5" aria-label="Komórka 6"></button>
+      <button class="cell" data-index="6" aria-label="Komórka 7"></button>
+      <button class="cell" data-index="7" aria-label="Komórka 8"></button>
+      <button class="cell" data-index="8" aria-label="Komórka 9"></button>
+    </div>
+    <div class="controls">
+      <button id="restart">Restart</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

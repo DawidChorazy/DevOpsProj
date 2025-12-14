@@ -1,0 +1,18 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:Segoe UI,Roboto,Arial,sans-serif;display:flex;align-items:center;justify-content:center;background:#f3f4f6;color:#111}
+.container{width:320px;padding:20px;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.08);text-align:center}
+h1{font-size:20px;margin-bottom:12px}
+.status{margin-bottom:12px;font-size:16px}
+.scoreboard{margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.scores{display:flex;gap:10px}
+.score-item{background:#f1f5f9;padding:6px 8px;border-radius:6px;font-weight:600}
+.score-controls button{padding:6px 10px;border-radius:6px;border:none;background:#ef4444;color:#fff;cursor:pointer}
+.score-controls button:hover{opacity:0.95}
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cell{width:96px;height:96px;font-size:40px;border:2px solid #e5e7eb;background:#fff;cursor:pointer;border-radius:6px}
+.cell:focus{outline:3px solid #60a5fa}
+.cell.win{background:#d1fae5}
+.controls{margin-top:12px}
+#restart{padding:8px 14px;border-radius:6px;border:none;background:#111;color:#fff;cursor:pointer}
+#restart:hover{opacity:0.95}
