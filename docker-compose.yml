@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - tictactoe-network
+
+  backend:
+    build: ./server
+    ports:
+      - "4000:4000"
+    networks:
+      - tictactoe-network
+
+networks:
+  tictactoe-network:
+    driver: bridge
